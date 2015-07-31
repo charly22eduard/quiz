@@ -21,8 +21,13 @@
     <%}else{%>
       <span class="right"> <%=session.user.username%> <a href="/logout">Logout</a></span>
     <%}%>
-    
+  
     <h2>Quiz: el juego de las preguntas</h2>
+    <form method="get" action="/quizes">        
+      Buscar:
+      <input type="text" name="search" value="Búsqueda"/>
+      <input type="submit" value="Enviar">
+    </form>
   </header>
 
   <nav class="main" id="n1" role="navigation">
